@@ -2,11 +2,8 @@ version: 0.2
 
 env:
   parameter-store:
-    my-param: "value"
-  exported-variables:
-    - my-param
-
+    my-build-param: "my-parameter-store"
 phases:
   build:
     commands:
-      - echo my-param
+      - echo $my-build-param
