@@ -1,0 +1,12 @@
+version: 0.2
+
+env:
+  parameter-store:
+    my-param: "value"
+  exported-variables:
+    - my-param
+
+phases:
+  build:
+    commands:
+      - echo my-param
